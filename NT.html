@@ -260,7 +260,7 @@
     // Clock
     function updateClock() {
       const now = new Date();
-      $('#clock').textContent = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
+      $('#clock').textContent = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
       $('#date').textContent = now.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
     }
     updateClock();
@@ -315,17 +315,11 @@
     // Quote
     const quotes = [
     "so tuff",
-    "it is what it is",
     "do ur work",
     "this is what happens when u dont touch grass",
-    "FULL BOX",
-    "FULL PIECE",
-    "200!",
     "press esc + refresh + power button for hacks",
-    "press ctrl+x to hide your screen",
     "change the tab title and favicon in settings",
     "TEACHERR!",
-    "lebron lebron lebronn james",
     "lebron is OUR goat"
 ];
     $('#quote').textContent = quotes[Math.floor(Math.random() * quotes.length)];
