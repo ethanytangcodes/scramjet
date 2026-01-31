@@ -14,7 +14,6 @@ function getAllWispServers() {
     const customWisps = getStoredWisps();
     return [...WISP_SERVERS, ...customWisps];
 }
-
 // =====================================================
 // PROACTIVE SERVER HEALTH CHECKING
 // =====================================================
