@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 :root {
     /* Cosmos Core Colors */
-    --bg: #0a0e27;
-    --surface: #1a1535;
-    --surface-hover: #2d1b4e;
-    --surface-active: #3d2560;
-    --border: rgba(157, 78, 221, 0.35);
-    --border-light: rgba(157, 78, 221, 0.6);
+    --bg: #2d0a1a;
+    --surface: #3d1520;
+    --surface-hover: #4d1f30;
+    --surface-active: #5d2540;
+    --border: rgba(222, 49, 99, 0.35);
+    --border-light: rgba(222, 49, 99, 0.6);
 
     /* Text */
     --text: #ffffff;
@@ -15,24 +15,24 @@
     --text-dim: #8888a0;
 
     /* Cosmos Accent Colors */
-    --accent: #9d4edd;
-    --accent-secondary: #4cc9f0;
-    --accent-dim: rgba(157, 78, 221, 0.8);
-    --accent-glow: rgba(157, 78, 221, 0.3);
+    --accent: #DE3163;
+    --accent-secondary: #F88379;
+    --accent-dim: rgba(222, 49, 99, 0.8);
+    --accent-glow: rgba(222, 49, 99, 0.3);
 
     /* Status colors */
     --success: #22c55e;
     --warning: #f59e0b;
     --error: #ef4444;
-    --info: #4cc9f0;
+    --info: #F88379;
 
     /* Shadows */
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
     --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
     --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
-    --shadow-glow: 0 0 22px rgba(157, 78, 221, 0.3);
-    --shadow-glow-hover: 0 0 40px rgba(76, 201, 240, 0.6);
+    --shadow-glow: 0 0 22px rgba(222, 49, 99, 0.3);
+    --shadow-glow-hover: 0 0 40px rgba(248, 131, 121, 0.6);
 
     /* Spacing */
     --space-xs: 4px;
@@ -67,7 +67,7 @@
     --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
 
     /* Background gradient */
-    --bg-gradient: linear-gradient(135deg, #0a0e27, #1a1535, #2d1b4e);
+    --bg-gradient: linear-gradient(135deg, #2d0a1a, #3d1520, #4d1f30);
 }
 
 *,
@@ -93,8 +93,8 @@ body::before {
     position: fixed;
     inset: 0;
     background:
-        radial-gradient(circle at 20% 30%, rgba(157, 78, 221, 0.2), transparent 40%),
-        radial-gradient(circle at 80% 70%, rgba(76, 201, 240, 0.2), transparent 40%);
+        radial-gradient(circle at 20% 30%, rgba(222, 49, 99, 0.2), transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(248, 131, 121, 0.2), transparent 40%);
     animation: float 20s ease-in-out infinite;
     pointer-events: none;
     z-index: 0;
@@ -136,7 +136,7 @@ body::before {
     padding: 8px 12px;
     min-width: 180px;
     max-width: 220px;
-    background: rgba(26, 21, 53, 0.75);
+    background: rgba(45, 10, 26, 0.75);
     border: 2px solid var(--border);
     border-bottom: none;
     border-radius: 8px 8px 0 0;
@@ -207,7 +207,7 @@ body::before {
 }
 
 .new-tab:hover {
-    background: rgba(157, 78, 221, 0.2);
+    background: rgba(222, 49, 99, 0.2);
     color: var(--accent-secondary);
 }
 
@@ -226,7 +226,7 @@ body::before {
     justify-content: center;
     width: 36px;
     height: 36px;
-    background: rgba(26, 21, 53, 0.75);
+    background: rgba(45, 10, 26, 0.75);
     border: 2px solid var(--border);
     border-radius: 8px;
     color: var(--accent-secondary);
@@ -255,7 +255,7 @@ input.bar {
     width: 100%;
     height: 36px;
     padding: 0 40px 0 14px;
-    background: rgba(26, 21, 53, 0.75);
+    background: rgba(45, 10, 26, 0.75);
     border: 2px solid var(--border);
     border-radius: 8px;
     color: var(--text);
@@ -296,7 +296,7 @@ input.bar::placeholder {
 
 #home-btn-nav:hover {
     color: var(--accent-secondary);
-    background: rgba(76, 201, 240, 0.1);
+    background: rgba(248, 131, 121, 0.1);
 }
 
 /* Loading Bar */
@@ -408,7 +408,7 @@ input.bar::placeholder {
 #skip-btn:hover {
     border-color: var(--accent-secondary);
     color: var(--accent-secondary);
-    background: rgba(76, 201, 240, 0.1);
+    background: rgba(248, 131, 121, 0.1);
 }
 
 /* Spinner */
@@ -445,7 +445,7 @@ input.bar::placeholder {
 }
 
 .settings-card {
-    background: rgba(26, 21, 53, 0.95);
+    background: rgba(45, 10, 26, 0.95);
     width: 400px;
     max-width: 90vw;
     border-radius: 12px;
@@ -453,7 +453,7 @@ input.bar::placeholder {
     overflow: hidden;
     box-shadow: 
         0 8px 32px rgba(0, 0, 0, 0.4),
-        0 0 40px rgba(157, 78, 221, 0.2);
+        0 0 40px rgba(222, 49, 99, 0.2);
 }
 
 .settings-header {
@@ -490,7 +490,7 @@ input.bar::placeholder {
 
 .close-btn:hover {
     color: var(--accent-secondary);
-    background: rgba(76, 201, 240, 0.1);
+    background: rgba(248, 131, 121, 0.1);
 }
 
 .settings-content {
@@ -529,13 +529,13 @@ input.bar::placeholder {
 
 .wisp-option:hover {
     border-color: var(--border-light);
-    background: rgba(45, 27, 78, 0.6);
+    background: rgba(77, 31, 48, 0.6);
 }
 
 .wisp-option.active {
     border-color: var(--accent-secondary);
-    background: rgba(76, 201, 240, 0.1);
-    box-shadow: 0 0 20px rgba(76, 201, 240, 0.3);
+    background: rgba(248, 131, 121, 0.1);
+    box-shadow: 0 0 20px rgba(248, 131, 121, 0.3);
 }
 
 .wisp-option-header {
@@ -609,7 +609,7 @@ input.bar::placeholder {
 .custom-input-group input:focus {
     border-color: var(--accent-secondary);
     background: rgba(10, 14, 39, 0.8);
-    box-shadow: 0 0 20px rgba(76, 201, 240, 0.4);
+    box-shadow: 0 0 20px rgba(248, 131, 121, 0.4);
 }
 
 .custom-input-group button {
@@ -622,14 +622,14 @@ input.bar::placeholder {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.25s ease;
-    box-shadow: 0 4px 15px rgba(157, 78, 221, 0.4);
+    box-shadow: 0 4px 15px rgba(222, 49, 99, 0.4);
 }
 
 .custom-input-group button:hover {
     transform: translateY(-2px);
     box-shadow: 
-        0 6px 20px rgba(157, 78, 221, 0.6),
-        0 0 30px rgba(76, 201, 240, 0.4);
+        0 6px 20px rgba(222, 49, 99, 0.6),
+        0 0 30px rgba(248, 131, 121, 0.4);
 }
 
 .settings-footer {
